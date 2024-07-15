@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel-site</title>
+
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+  
+    <!-- css style -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+      <!-- google fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&display=swap" rel="stylesheet">
+      
+
+</head>
+
+<body class="container mx-auto">
+
+    <!-- navbar starts -->
+    <section>
+        <nav class="p-4 flex justify-between items-center">
+            <div><img class="w-12" src="/images/logo.png" alt=""></div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class=" focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            </div>
+            <ul class="hidden md:flex lg:flex space-x-8 md:space-x-2 font-semibold text-md">
+                <li class="nav-item">
+                    <a href="#" class="nav-link px-3 py-2 lg:px-4">Destinations</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link px-3 py-2 lg:px-4">Hotels</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link px-3 py-2 lg:px-4">Flights</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link px-3 py-2 lg:px-4">Bookings</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link px-3 py-2 lg:px-4">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link px-3 py-2 border-2 border-black rounded-md">Sign Up</a
+            >
+          </li>
+          <li class="nav-item">
+            <select name="lang" id="lang">
+              <option value="En">EN</option>
+              <option value="Bn">BN</option>
+            </select>
+          </li>
+        </ul>
+    </nav>
+    <ul id="mobile-menu" class="hidden md:hidden flex flex-col items-center space-y-4 mt-4 font-semibold">
+      <li class="nav-item">
+        <a href="#" class="nav-link px-3 py-2 lg:px-4">Destinations</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link px-3 py-2 lg:px-4">Hotels</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link px-3 py-2 lg:px-4">Flights</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link px-3 py-2 lg:px-4">Bookings</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link px-3 py-2 lg:px-4">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link px-3 py-2 border-2 border-black rounded-md">Sign Up</a
+        >
+      </li>
+      <li class="nav-item">
+        <select name="lang" id="lang">
+          <option value="En">EN</option>
+          <option value="Bn">BN</option>
+        </select>
+      </li>
+    </ul>
+    </section>
+    <!-- navbar ends -->
+
+    <!-- Banner starts -->
+    <section class="px-2 py-3">
+      <div class="grid grid-cols-1 gap-10 lg:grid-cols-2 justify-around">
+        <!-- left side -->
+        <div class="ml-2 lg:ml-10 order-2 lg:order-1">
+          <h3 class="uppercase font-bold text-[#DC6954] md:text-center font-pla">Best destinations around the world</h3>
+          <h1 class="text-3xl font-Playwrite lg:text-6xl text-center  lg:text-left font-bold mt-4 text-[#171E4C]">Travel, enjoy <br> and live a new <br> and full life</h1>
+          <p class="mt-4 font-semibold text-[#171E4C] max-w-80 text-justify md:text-center">
+            Built Wicket longer admire do barton vanity itself do in it.
+            Preferred to sportsmen it engrossed listening. Park gate 
+            sell they west hard for the.
+          </p>
+          <div class="flex mt-4 gap-6">
+            <button class="bg-[#F1A501] px-3 lg:px-5 py-1 lg:py-3 text-white font-semibold rounded-lg text-lg">Find out more</button>
+            <button class="flex items-center text-lg font-semibold"><img class="w-14" src="/images/play.png" alt="play"> Play Demo</button>
+          </div>
+        </div>
+        <!-- Right side -->
+        <div class="mr-11 order-1 lg:order-2">
+          <img src="/images/banner-img.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- Banner ends -->
+
+    <!-- Services starts -->
+    <section class=" mt-14 py-6 text-[#14183D] p-2 lg:p-0">
+      <div class="relative">
+        <div class="w-20 h-20 bg-[#DD6952] absolute left-[350px] top-[330px] rounded-tl-2xl rounded-br-xl -z-10 hidden lg:block"></div>
+        <div class="">
+          <div class="text-center">
+            <p class="uppercase font-medium">Category</p>
+            <h1 class="capitalize text-4xl lg:text-5xl font-semibold mt-2">
+              We offer best services
+            </h1>
+          </div>
+          <!-- services item -->
+          <div class="grid grid-cols-1 lg:grid-cols-4 items-center space-y-10 justify-evenly text-[#2E2E50]">
+            <!-- item-1 -->
+            <div class="grid grid-cols-1 mt-10 bg-white  max-w-56 mx-auto p-6">
+              <div class="relative">
+                <div class="bg-[#FFF1DA] absolute w-10 h-10 left-44 lg:left-40 top-6  -z-10 rounded-br-lg"></div>
+                <img
+                class="w-14 mx-auto"
+                src="/images/service-images/satellite-dish.png"
+                alt="img"
+              />
+              </div>
+    
+              <div class="text-center">
+                <h2 class="text-xl font-semibold mt-6">Calculated Weather</h2>
+                <p class="mt-3 text-md font-semibold w-40 text-center mx-auto">
+                  Built Wicket longer admire do barton vanity itself do in it.
+                </p>
+              </div>
+            </div>
+            <!-- item-2 -->
+            <div class="flex flex-col bg-white  max-w-56 mx-auto p-6  drop-shadow-none lg:drop-shadow-2xl rounded-2xl ">
+              <div class="relative">
+                <div class="bg-[#FFF1DA] absolute w-10 h-10 left-36 lg:left-28  -z-10 rounded-tr-md rounded-bl-xl"></div>
+                <img
+                class="w-14 mx-auto"
+                src="/images/service-images/travelling.png"
+                alt="img"
+              />
+              </div>
+    
+              <div class="text-center">
+                <h2 class="text-xl font-semibold mt-6">Best Flights</h2>
+                <p class="mt-3 text-md font-semibold w-40 text-center mx-auto">
+                  Engrossed listening. park gate sell they west hard for the.
+                </p>
+              </div>
+            </div>
+            <!-- item-3 -->
+            <div class="flex flex-col bg-white  max-w-56 mx-auto p-6">
+              <div class="relative">
+                <div class="bg-[#FFF1DA] absolute w-10 h-10 left-36 lg:left-28 -z-10 rounded-tr-xl rounded-bl-md"></div>
+                <img
+                class="w-14 mx-auto"
+                src="/images/service-images/microphone.png"
+                alt="img"
+              />
+              </div>
+    
+              <div class="text-center">
+                <h2 class="text-xl font-semibold mt-6">Local Events</h2>
+                <p class="mt-3 text-md font-semibold w-40 text-center mx-auto">
+                  Barton vanity itself do in it.Prefererd to mean it engrossed listening.
+                </p>
+              </div>
+            </div>
+            <!-- item-4 -->
+            <div class="flex flex-col bg-white  max-w-56 mx-auto p-6">
+              <div class="relative">
+                <div class="bg-[#FFF1DA] absolute w-10 h-10 left-44 lg:left-40 top-6  -z-10 rounded-tr-md rounded-bl-xl"></div>
+                <img
+                class="w-14 mx-auto"
+                src="/images/service-images/settings.png"
+                alt="img"
+              />
+              </div>
+    
+              <div class="text-center">
+                <h2 class="text-xl font-semibold mt-6">Calculated Weather</h2>
+                <p class="mt-3 text-md font-semibold w-40 text-center mx-auto">
+                  We deliver outsourced avaiation services for military customers.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+      </div>
+    </section>
+    <!-- Services ends -->
+
+    <!-- Destination starts -->
+    <section class=" mt-14 py-8">
+      <div class="text-center text-[#141741] mb-10">
+        <p class="capitalize font-medium">Top selling</p>
+        <h1 class="capitalize text-5xl font-semibold">Top Destinations</h1>
+      </div>
+      <!-- services item -->
+      <div class="flex flex-wrap lg:flex-row gap-8 w-fit mx-auto justify-center">
+        <!--Des-item-1 -->
+        <div class="w-[300px] ">
+          <img class="w-[300px] h-[300px] object-cover  mx-auto rounded-t-3xl" src="/images/rome.jpg"  alt="img" />
+          <div class="text-center">
+            <div class="flex justify-between px-6 mt-4 font-semibold text-[#5A6080]">
+              <p>Rome, Italy</p>
+              <p>$5.2k</p>
+            </div>
+            <div class="flex items-center gap-2 ml-6 font-semibold ">
+              <i class="fa-solid fa-location-arrow"></i>
+              <p class="text-[#5A6080]">10 Days Trip</p>
+            </div>
+          </div>
+        </div>
+        <!-- Des-item-2 -->
+        <div class="w-[300px] ">
+          <img class="w-[300px] h-[300px] object-cover  mx-auto rounded-t-3xl" src="/images/big-ben.jpg"  alt="img" />
+          <div class="text-center">
+            <div class="flex justify-between px-6 mt-4 font-semibold text-[#5A6080]">
+              <p>Rome, Italy</p>
+              <p>$5.2k</p>
+            </div>
+            <div class="flex items-center gap-2 ml-6 font-semibold ">
+              <i class="fa-solid fa-location-arrow"></i>
+              <p class="text-[#5A6080]">10 Days Trip</p>
+            </div>
+          </div>
+        </div>
+        <!-- Des-item-3 -->
+        <div class="w-[300px] ">
+          <img class="w-[300px] h-[300px] object-cover  mx-auto rounded-t-3xl" src="/images/eifel-tower.jpg"  alt="img" />
+          <div class="text-center">
+            <div class="flex justify-between px-6 mt-4 font-semibold text-[#5A6080]">
+              <p>Rome, Italy</p>
+              <p>$5.2k</p>
+            </div>
+            <div class="flex items-center gap-2 ml-6 font-semibold ">
+              <i class="fa-solid fa-location-arrow"></i>
+              <p class="text-[#5A6080]">10 Days Trip</p>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- Destination ends -->
+
+    <!-- Book Next starts -->
+     <section class=" mt-14 py-8">
+      <div class="flex flex-wrap lg:flex-row justify-evenly px-10">
+        <!-- left side -->
+        <div class="max-w-xl">
+         <div class="text-[#14183E]"> 
+            <p class="font-bold">Easy and Fast</p>
+            <h1 class="text-4xl lg:text-5xl font-semibold lg:w-[450px]">Book Your Next Trip In 3 Easy Steps</h1>
+          </div>
+          <div class="mt-6 text-[#242a62]">
+            <div class="mb-4">
+              <h3 class="font-lg font-bold">Choose Destination</h3>
+              <p class="font-semibold text-sm">
+                Lorem ipsum dolor sit amet, adipisicing <br> elit. Non perspiciatis deserunt fuga.
+              </p>
+            </div>
+            <div class="mb-4">
+              <h3 class="font-lg font-bold">Make Payment</h3>
+              <p class="font-semibold text-sm">
+                Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit.  eos obcaecati.
+              </p>
+            </div>
+            <div>
+              <h3 class="font-lg  font-bold">Reach Airport on Selected Date</h3>
+              <p class="font-semibold text-sm">
+                Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit. Non eos obcaecati.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- right side-->
+        <div class="max-w-96  rounded-2xl shadow-2xl shadow-teal-200 mt-6 lg:mt-1 mx-auto w-full">
+          <div class="p-3 relative mx-auto w-fit">
+            <img class=" max-w-60 lg:max-w-80 rounded-2xl" src="/images/beach.jpg" alt="beach">
+            <h2 class="mt-4 font-semibold text-lg">Trip to Greece</h2>
+            <div class="flex gap-2 font-semibold text-[#847e9f]">
+              <p>14-29 June |</p>
+              <p>by Robbin Jackson</p>
+            </div>
+            <div class="flex gap-4 text-xl mt-4 mb-6 text-[#847e9f] space-x-4 px-2">
+              <i class="fa-solid fa-leaf bg-slate-200 p-3 rounded-full"></i>
+              <i class="fa-regular fa-bookmark bg-slate-200 p-3 rounded-full"></i>
+              <i class="fa-solid fa-location-arrow bg-slate-200 p-3 rounded-full"></i>
+            </div>
+            <div class="flex justify-between text-[#847e9f] items-center">
+              <div class="flex gap-2">
+                <i class="fa-solid fa-building-flag"></i>
+                <p class="font-semibold">24 people going</p>
+              </div>
+              <div class="">
+                <i class="fa-regular fa-heart  text-2xl"></i>
+              </div>
+            </div>
+            <!-- absolute part -->
+             <div class="absolute flex gap-2 bg-white rounded-2xl w-[200px] h-20 shadow-2xl left-12 lg:left-64 -bottom-20 lg:bottom-10 p-2">
+                <div>
+                  <img class="rounded-full bg-orange-300 w-10" src="/images/al-aqsa-mosque.png" alt="">
+                </div>
+                <div>
+                  <p class="text-sm font-semibold text-[#A5A4B5]">Ongoing</p>
+                  <h2 class="text-xl font-semibold">Trip to Rome</h2>
+                  <p class="font-semibold text-sm text-blue-600">40% <span class="text-black">completed</span></p>
+                </div>
+             </div>
+          </div>
+        </div>
+      </div>
+     </section>
+    <!-- Book Next ends -->
+
+    <!-- Partners starts -->
+     <section class=" mt-14 py-10">
+      <div class="flex gap-20 flex-wrap justify-center items-center">
+        <img class="w-28" src="/images/Axon-logo.png" alt="Axon">
+        <img class="w-28" src="/images/jetstar-logo.png" alt="jetstar">
+        <img class="w-28  drop-shadow-2xl bg-white inline-block" src="/images/expedia-logo.png" alt="expedia">
+        <img class="w-28" src="/images/qantas-logo.png" alt="qantas">
+        <img class="w-28" src="/images/Alitalia-logo.png" alt="Alitalia">
+      </div>
+     </section>
+    <!-- Partners ends -->
+
+    <!-- subscribe starts -->
+     <section class=" mt-14">
+      <div class="bg-[#F8F7FD] py-10 relative rounded-t-[50px]">
+        <h1 class="text-xl lg:text-3xl font-bold text-center max-w-2xl mx-auto text-[#828498]">Subscribe to get information, latest news and other interesting offers about jadoo</h1>
+        <div class="flex">
+          <div class="flex gap-4 relative w-[300px] lg:w-96 mx-auto mt-10 p-2 lg:p-1">
+            <i id="email-icon" class="fas fa-envelope text-xl absolute left-3 top-1/2 transform -translate-y-1/2 pointer-events-none"></i>
+            <input type="email" id="email-input" placeholder="Your email" 
+                   class="pl-10 border  rounded-md p-3 w-full  outline-none text-md text-black focus:placeholder-transparent"
+                   onfocus="hideIcon()" onblur="showIcon()">
+              <button class="bg-[#FF866A] text-white text-sm font-semibold p-2 rounded-lg">Subscribe</button>
+          </div>
+        </div>
+
+        <!-- absolute part -->
+         <div class=" absolute right-4 lg:-right-5 bottom-60 lg:bottom-48">
+           <img class="w-10 lg:w-14" src="/images/navigator.png" alt="navigator">
+         </div>
+      </div>
+     </section>
+    <!-- subscribe ends -->
+
+    <!-- Footer starts -->
+     <section class=" mt-14 py-10 ">
+      <div class="grid grid-cols-2 lg:grid-cols-7 p-3">
+        <!-- col-1 -->
+        <div class="col-span-2">
+          <img class="w-14 mx-auto" src="/images/logo.png" alt="logo">
+          <p class="text-center font-semibold text-[#5D6181]">Book your trip in minute, get full <br> control for much longer.</p>
+        </div>
+
+        <!-- col-2 -->
+        <div>
+          <h2 class="text-xl font-bold">Company</h2>
+          <div class="flex flex-col text-[#5D6181] font-semibold text-sm mt-3">
+            <a href="#">About</a>
+            <a href="#">Carrer</a>
+            <a href="#">Mobile</a>
+          </div>
+        </div>
+
+        <!-- col-3 -->
+        <div>
+          <h2 class="text-xl font-bold">Contact</h2>
+          <div class="flex flex-col text-[#5D6181] font-semibold text-sm mt-3">
+            <a href="#">Help/FAQ</a>
+            <a href="#">Press</a>
+            <a href="#">Affilates</a>
+          </div>
+        </div>
+
+        <!-- col-4 -->
+        <div>
+            <h2 class="text-xl  font-bold">More</h2>
+            <div class="flex flex-col text-[#5D6181] font-semibold text-sm mt-3">
+                <a href="#">Airlinefees</a>
+                <a href="#">Airline</a>
+                <a href="#">Loe fare trips</a>
+            </div>
+        </div>
+
+        <!-- col-5 -->
+        <div class="flex items-center justify-center gap-4 col-span-2">
+            <img class="w-12 inline-block drop-shadow-lg bg-white rounded-full p-2" src="/images/social-icon/facebook.png" alt="facebook">
+            <img class="w-12 inline-block drop-shadow-lg bg-white rounded-full p-2" src="/images/social-icon/instagram.png" alt="instagram">
+            <img class="w-12 inline-block drop-shadow-lg bg-white rounded-full p-2" src="/images/social-icon/twitter.png" alt="twitter">
+        </div>
+
+    </section>
+    <!-- Footer ends -->
+
+    <!-- js file link -->
+    <script src="script.js"></script>
+    <script src="tailwind.config.js"></script>
+
+</body>
+
+</html>
+
